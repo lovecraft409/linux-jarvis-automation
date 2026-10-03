@@ -32,7 +32,9 @@ async def websocket_server():
         config.WS_PORT,
         reuse_address=True,
     ):
-        print(f"[WS] WebSocket server running on ws://{config.WS_HOST}:{config.WS_PORT}")
+        print(
+            f"[WS] WebSocket server running on ws://{config.WS_HOST}:{config.WS_PORT}"
+        )
         await asyncio.Future()
 
 
